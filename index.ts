@@ -14,11 +14,12 @@ axios.get(url).then((response) => {
   const id = todo.id
   const title = todo.title
   const completed = todo.completed
+  const userid = 10
 
-  logTodo(id, completed, title)
+  logTodo(id, completed, title, userid)
 })
 
-const logTodo = (id:number, completed: boolean, title:string) => {
+const logTodo = (id:number, completed: boolean, title:string, userId:number = 30) => {
   console.log(`
     The Todo with ID: ${id}
     Has a title of: ${title}
