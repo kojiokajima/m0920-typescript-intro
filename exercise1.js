@@ -5,8 +5,7 @@
 // • Annotate primitive types, arrays, and 'any' types
 // • Identify when type checking happens
 // • Afterwards we will analyze transpiler output
-// export default () => {
-var yo = function () {
+var Exercise1 = function () {
     // ======== Exercise 1.1 ========
     // Instructions:
     // • Hover over red squigglies to inspect the TS errors.
@@ -59,9 +58,29 @@ var yo = function () {
     // • Add type annotations (as explicit as possible)
     // • Fix errors (if applicable)
     var sequence = Array.from(Array(10).keys());
-    var animals = ["pangolin", "aardvark", "echidna", "binturong"];
-    var stringsAndNumbers = [1, "one", 2, "two", 3, "three"];
-    var allMyArrays = [sequence, animals, stringsAndNumbers];
+    var animals = [
+        "pangolin",
+        "aardvark",
+        "echidna",
+        "binturong",
+    ];
+    var stringsAndNumbers = [
+        1,
+        "one",
+        2,
+        "two",
+        3,
+        "three",
+    ];
+    var allMyArrays = [
+        sequence,
+        animals,
+        stringsAndNumbers,
+    ];
+    // const sequence = Array.from(Array(10).keys());
+    // const animals= ["pangolin", "aardvark", "echidna", "binturong"];
+    // const stringsAndNumbers = [1, "one", 2, "two", 3, "three"];
+    // const allMyArrays = [sequence, animals, stringsAndNumbers];
     console.log("Exercise 1.5", allMyArrays);
     // ======== Exercise 1.6 ========
     // Goal:
@@ -78,4 +97,4 @@ var yo = function () {
         return "Added " + quantity + " " + name + "s to inventory.";
     }
 };
-yo();
+Exercise1();

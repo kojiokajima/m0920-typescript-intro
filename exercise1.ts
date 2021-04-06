@@ -7,8 +7,7 @@
 // • Identify when type checking happens
 // • Afterwards we will analyze transpiler output
 
-export default () => {
-// const yo = () => {
+  const Exercise1 = () => {
   // ======== Exercise 1.1 ========
   // Instructions:
   // • Hover over red squigglies to inspect the TS errors.
@@ -76,9 +75,29 @@ export default () => {
   // • Fix errors (if applicable)
 
   const sequence: Array<number> = Array.from(Array(10).keys());
-  const animals: Array<string> = ["pangolin", "aardvark", "echidna", "binturong"];
-  const stringsAndNumbers: Array<number | string> = [1, "one", 2, "two", 3, "three"];
-  const allMyArrays: Array<Array<string | number>> = [sequence, animals, stringsAndNumbers];
+  const animals: Array<string> = [
+    "pangolin",
+    "aardvark",
+    "echidna",
+    "binturong",
+  ];
+  const stringsAndNumbers: Array<number | string> = [
+    1,
+    "one",
+    2,
+    "two",
+    3,
+    "three",
+  ];
+  const allMyArrays: Array<Array<string | number>> = [
+    sequence,
+    animals,
+    stringsAndNumbers,
+  ];
+  // const sequence = Array.from(Array(10).keys());
+  // const animals= ["pangolin", "aardvark", "echidna", "binturong"];
+  // const stringsAndNumbers = [1, "one", 2, "two", 3, "three"];
+  // const allMyArrays = [sequence, animals, stringsAndNumbers];
 
   console.log("Exercise 1.5", allMyArrays);
 
@@ -104,4 +123,4 @@ export default () => {
   }
 };
 
-// yo()
+Exercise1();
