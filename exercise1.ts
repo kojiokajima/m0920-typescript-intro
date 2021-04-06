@@ -7,8 +7,8 @@
 // • Identify when type checking happens
 // • Afterwards we will analyze transpiler output
 
-// export default () => {
-const yo = () => {
+export default () => {
+// const yo = () => {
   // ======== Exercise 1.1 ========
   // Instructions:
   // • Hover over red squigglies to inspect the TS errors.
@@ -104,4 +104,4 @@ const yo = () => {
   }
 };
 
-yo()
+// yo()
